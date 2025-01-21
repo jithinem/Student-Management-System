@@ -11,8 +11,8 @@ This application leverages **MongoDB** to manage students information informatio
 ### Setup
 1. Clone the repository.
 2. Install dependencies:
-   npm install.
-   npm start.
+   npm install,
+   npm start,
    The app is initialized from server.js
 
 ## API
