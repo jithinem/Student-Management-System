@@ -24,3 +24,6 @@ login for admin and students,
 list of tasks,
 list of task progress,
 list of students
+
+## Postman Collection
+Student Management Portal.postman_collection.json is part of the code.
