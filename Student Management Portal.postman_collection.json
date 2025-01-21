@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "9b7eb9dd-90f5-4afc-a581-9665048f47af",
+		"name": "Student Management Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41309142"
+	},
+	"item": [
+		{
+			"name": "admin login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\":\"admin\",\r\n    \"user_type\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"d@gmail.com\",\r\n    \"password\":\"ddd\",\r\n    \"user_type\":\"student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create student",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdiMjUxN2U1NjY3NTRhZTViMDMiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwiaWF0IjoxNzM3NDc0NTI0LCJleHAiOjE3Mzc0NzgxMjR9.R6TY_j8I8IhwfiqfE_pW3HNAH0hHDdVmbYwKlWa8XHQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"e@gmail.com\",\r\n    \"password\":\"eee\",\r\n    \"department\":\"ecom\",\r\n    \"name\":\"e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/create-student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"create-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdiMjUxN2U1NjY3NTRhZTViMDMiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwiaWF0IjoxNzM3NDc0NTI0LCJleHAiOjE3Mzc0NzgxMjR9.R6TY_j8I8IhwfiqfE_pW3HNAH0hHDdVmbYwKlWa8XHQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"task\": \"Complete Assignment \",\r\n  \"due_date\": \"2025-01-30\",\r\n  \"department\": \"dlit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/task/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student task update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdkNjUxN2U1NjY3NTRhZTViMDciLCJlbWFpbCI6ImJAZ21haWwuY29tIiwidXNlcl90eXBlIjoic3R1ZGVudCIsImlhdCI6MTczNzQ3NDUzMSwiZXhwIjoxNzM3NDc4MTMxfQ.KDUwaP5F30ql2GVNPGLTF2F4a7nBR0DmmXddrnUgBKk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"in-progress\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/task/task-progress/678fc227cf9f2cd71a256fa3/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"task-progress",
+						"678fc227cf9f2cd71a256fa3",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "individual student tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdmYjUxN2U1NjY3NTRhZTViMTAiLCJlbWFpbCI6ImRAZ21haWwuY29tIiwidXNlcl90eXBlIjoic3R1ZGVudCIsImlhdCI6MTczNzQ3ODcxOCwiZXhwIjoxNzM3NDg5NTE4fQ.rW0X-vyxBiVLiSqUGfXko9luessm1knkfGY_H-pnwXY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/task/student-tasks?page=1&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"student-tasks"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list of task progress",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdiMjUxN2U1NjY3NTRhZTViMDMiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwiaWF0IjoxNzM3NDc4NzU1LCJleHAiOjE3Mzc0ODk1NTV9.sWW9ZRAryTFgTCR81gI-Ohc4oStr1RSX0U0e4dlIh8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/task/admin/tasks-progress?page=1&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"admin",
+						"tasks-progress"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdiMjUxN2U1NjY3NTRhZTViMDMiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwiaWF0IjoxNzM3NDcyMTMwLCJleHAiOjE3Mzc0NzU3MzB9.TIFmAi2d6RFcP7q7xZHTCtmcc6BDH8CEZZB2MpMsn7E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/task/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"task",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all students",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzhmODdiMjUxN2U1NjY3NTRhZTViMDMiLCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInVzZXJfdHlwZSI6ImFkbWluIiwiaWF0IjoxNzM3NDcyMTMwLCJleHAiOjE3Mzc0NzU3MzB9.TIFmAi2d6RFcP7q7xZHTCtmcc6BDH8CEZZB2MpMsn7E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
