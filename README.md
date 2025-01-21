@@ -11,16 +11,16 @@ This application leverages **MongoDB** to manage students information informatio
 ### Setup
 1. Clone the repository.
 2. Install dependencies:
-   npm install
-   npm start
+   npm install.
+   npm start.
    The app is initialized from server.js
 
 ## API
 ### APIs are for,
-creation of students by admin
-creation of tasks by admin
-update of tasks by students
-login for admin and students
-list of tasks
-list of task progress
+creation of students by admin,
+creation of tasks by admin,
+update of tasks by students,
+login for admin and students,
+list of tasks,
+list of task progress,
 list of students
