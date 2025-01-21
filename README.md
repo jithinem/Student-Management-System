@@ -26,4 +26,4 @@ list of task progress,
 list of students
 
 ## Postman Collection
-Student Management Portal.postman_collection.json is part of the code.
+Student Management Portal.postman_collection.json is part of the code. Just import it to the postman to call apis.
